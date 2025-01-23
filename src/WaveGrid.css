@@ -1,0 +1,18 @@
+/* src/WaveGrid.css */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(15, 40px); /* Adjust the size as needed */
+  grid-template-columns: repeat(20, 40px);
+  gap: 2px;
+  margin: 20px auto;
+}
+
+.row {
+  display: contents; /* Use contents to avoid extra divs */
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.1s ease; /* Smooth transition for color change */
+}
